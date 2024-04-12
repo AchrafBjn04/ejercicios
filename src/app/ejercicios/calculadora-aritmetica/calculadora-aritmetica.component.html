@@ -1,0 +1,19 @@
+<h1>Calculadora Aritmética</h1>
+<div>
+    <input type="number" [(ngModel)]="num1" (input)="noMostrar()">
+    <div>
+        <button (click)="suma()">+</button>
+        <button (click)="resta()">-</button>
+    </div>
+    <div>
+        <button (click)="multiplicacion()">x</button>
+        <button (click)="division()">/</button>
+    </div>
+    <div>
+        <button (click)="resultado()">=</button>
+    </div>
+    <input type="number" [(ngModel)]="num2" (input)="noMostrar()">
+</div>
+<div *ngIf="mostrarResultado">
+    <p>Resultado: {{ resultado() }}</p>
+</div>

@@ -1,0 +1,16 @@
+<h1>Calculadora divisas</h1>
+<div>
+    <label title="euro">EURO -> </label>
+    <input type="text" [(ngModel)]="euro" pattern="[0-9]+(\.[0-9]+)?" (keypress)="onKeyPress($event)" (input)="euroCalc()">
+    <label title="euro"> €</label>
+</div>
+<div>
+    <label title="dollar">DOLLAR -> </label>
+    <input type="text" [(ngModel)]="dollar" pattern="[0-9]+(\.[0-9]+)?" (keypress)="onKeyPress($event)" (input)="dollarCalc()">
+    <label title="dollar"> $</label>
+</div>
+<div>
+    <label title="libra">LIBRAS -> </label>
+    <input type="text" [(ngModel)]="libra" pattern="[0-9]+(\.[0-9]+)?" (keypress)="onKeyPress($event)" (input)="libraCalc()">
+    <label title="libra"> £</label>
+</div>
